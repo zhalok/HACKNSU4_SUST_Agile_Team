@@ -1,0 +1,36 @@
+{
+  "name": "cuttick",
+  "version": "1.0.0",
+  "description": "An advanced e ticketing service where the user can not only buy a ticket but also request a ticket if no tickets are available at the moment",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhalok/HACKNSU4_SUST_Agile_Team.git"
+  },
+  "keywords": [
+    "e-ticketing",
+    "mysql",
+    "nodejs",
+    "flutter",
+    "reactjs",
+    "sslcommerce"
+  ],
+  "author": "SUST_Agile_Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhalok/HACKNSU4_SUST_Agile_Team/issues"
+  },
+  "homepage": "https://github.com/zhalok/HACKNSU4_SUST_Agile_Team#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemailer": "^6.7.8",
+    "nodemon": "^2.0.19",
+    "sslcommerz-nodejs": "^1.0.8",
+    "uuid": "^8.3.2"
+  }
+}
