@@ -43,7 +43,7 @@ const Login=()=>{
 
     return(
         <div id="container">
-            <TitleBar page="login"/>
+            <TitleBar page="clientPage"/>
             <div id="login">
                 <div id="logintxt">Log in to Cuttick</div>
                 <input class="logininput" id="email" placeholder="Email"/>

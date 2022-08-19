@@ -4,7 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 
 //import LandingPage from './components/Landing_page/Landing_page';
-// import ClientSearchPage from  './components/ClinetSearhPage/ClientSearchPage'
+ import ClientSearchPage from  './components/ClinetSearhPage/ClientSearchPage'
 import Login from './components/Login/Login'
 import SignUpAsClient from './components/SignUpAsClient/SignUpAsClient';
 
@@ -31,6 +31,7 @@ function App() {
         
         <Route path="/login" exact element={<Login/>}/>
         <Route path="/signup" exact element={<SignUpAsClient/>}/>
+        <Route path="/search" exact element={<ClientSearchPage/>}/>
           
         </Routes>
       </Router>
