@@ -1,6 +1,4 @@
-payment: https://f9a1-37-111-214-100.in.ngrok.io/payment/initialize-payment
-
-dummy_data: {
+{
     "total_amount":100,
     "currency":"BDT",
     "cus_name":"Zhalok",
@@ -13,5 +11,3 @@ dummy_data: {
     "ticket_id":"Parabat 1A"
 
 }
-
-ticket_request: https://f9a1-37-111-214-100.in.ngrok.io/tickets/request
