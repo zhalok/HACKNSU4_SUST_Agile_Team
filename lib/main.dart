@@ -1,21 +1,20 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 void main(){
-  runApp(const MyApp());
-}
+   runApp(const MyApp());
+ }
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
-
+ 
   @override
   State<MyApp> createState() => _MyAppState();
 }
-
+ 
 class _MyAppState extends State<MyApp> {
   String dropdownvalue = 'Dhaka';  
  
-  
-  var items = [   
+ 
+  var items = [  
     'Dhaka',
     'Sylhet',
     'Chittagong',
@@ -25,25 +24,21 @@ class _MyAppState extends State<MyApp> {
   ];
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(10),
-      decoration:const BoxDecoration(
-    color: Colors.white,
-    borderRadius: BorderRadius.only(
-      topLeft: Radius.circular(10),
-        topRight: Radius.circular(10),
-        bottomLeft: Radius.circular(10),
-        bottomRight: Radius.circular(10)
-    ),
-      ),
-      child:  Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            DropdownButton(
-              isExpanded: false,
+    return MaterialApp(
+      title: 'E-Ticket',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.green),
+      darkTheme: ThemeData(primarySwatch: Colors.grey),
+      color: Colors.amberAccent,
+      home: Scaffold(
+        appBar: AppBar(title: const Text('E-Ticket',style: TextStyle(color: Colors.black),)),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              DropdownButton(
               value: dropdownvalue,
-              icon: const Icon(Icons.keyboard_arrow_down),
+              icon: const Icon(Icons.keyboard_arrow_down),  
               items: items.map((String items) {
                 return DropdownMenuItem(
                   value: items,
@@ -55,14 +50,10 @@ class _MyAppState extends State<MyApp> {
                   dropdownvalue = newValue!;
                 });
               },
-              hint: Align(
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  "From",
-                  style: TextStyle(color: Colors.black),
+            ),
+            SizedBox(
+                  height: 50,
                 ),
-              ),
-              ),
               DropdownButton(
               isExpanded: false,
               value: dropdownvalue,
@@ -86,8 +77,12 @@ class _MyAppState extends State<MyApp> {
                 ),
               ),
               ),
-              
-          ],
+              SizedBox(
+                  height: 50,
+                ),
+             
+            ],
+          ),
         ),
       ),
     );

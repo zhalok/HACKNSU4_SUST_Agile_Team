@@ -1,0 +1,4 @@
+#Fri Aug 19 12:25:07 BDT 2022
+base.0=E\:\\HackNSU\\HACKNSU4_SUST_Agile_Team-1\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
