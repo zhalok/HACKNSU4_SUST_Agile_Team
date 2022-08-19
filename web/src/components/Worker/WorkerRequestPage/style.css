@@ -1,4 +1,4 @@
-#hire {
+#request {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -9,18 +9,14 @@
     min-height: 70vh;
   }
 
-  #searchpagehiretxt {
+  #requestpagetxt {
     font-size: 36px;
     font-weight: bold;
     color: rgb(186, 184, 181);
-    margin-top: 16px;
+    margin-top: 16px;;
+    margin-bottom: 16px;
   }
-  #searchstatetxt{
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: rgb(186, 184, 181);
-
-  }
+  
 
   .rectangle {
     display: flex;
@@ -38,17 +34,6 @@
     cursor: pointer;
   }
 
-  #statusrectangle {
-    display: inline-block;
-    width: 20px;
-    height: 10px;
-    background: white;
-    border: 2px solid #dedbdb;
-    border-radius: 12px;
-    box-shadow: 1px 3px grey;
-    align-items: center;
-    align-content: center;
-  }
 
   .workerimg {
     width: 75px;
@@ -68,7 +53,8 @@
     color: rgb(66, 64, 64);
     font-size: 24px;
     text-align: left;
-    margin-left: 0px;
+    margin-left: 20px;
+    padding-left: 20px;
     width:240px ;
     float:left;
   }
@@ -80,7 +66,25 @@
     text-align: left;    
   }
  
-  .hirebutton {
+  .acceptbutton {
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px;
+    margin: auto;
+    margin-right: 12px;
+    border:1px solid green
+  }
+  .acceptbutton:hover {
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+  }
+
+  .declinebutton {
     background-color: green;
     color: white;
     border-radius: 10px;
@@ -91,8 +95,10 @@
     margin: auto;
     border:1px solid green
   }
-  .hirebutton:hover {
+  .declinebutton:hover {
     background-color: white;
     color: green;
     border: 1px solid green;
   }
+
+  

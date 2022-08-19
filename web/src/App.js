@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
  import ClientSearchPage from  './components/ClinetSearhPage/ClientSearchPage'
 import Login from './components/Login/Login'
 import SignUpAsClient from './components/SignUpAsClient/SignUpAsClient';
+import WorkersRequestPage from './components/Worker/WorkerRequestPage/WorkerRequestPage';
 
 // import UserProfile from './components/UserProfile/UserProfile'
 //import ViewSearchedUserProfile from './components/UserProfile/ViewSearchedUserProfile';
@@ -32,6 +33,7 @@ function App() {
         <Route path="/login" exact element={<Login/>}/>
         <Route path="/signup" exact element={<SignUpAsClient/>}/>
         <Route path="/search" exact element={<ClientSearchPage/>}/>
+        <Route path="/workerRequest" exact element={<WorkersRequestPage/>}/>
           
         </Routes>
       </Router>

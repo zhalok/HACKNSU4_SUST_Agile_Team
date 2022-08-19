@@ -9,11 +9,11 @@
     min-height: 70vh;
   }
 
-  #clientshiretxt {
+  #hiretxt {
     font-size: 36px;
     font-weight: bold;
     color: rgb(186, 184, 181);
-    margin-top: 16px;
+    margin:auto;
     margin-bottom: 16px;
   }
 
@@ -24,11 +24,12 @@
     background: white;
     border: 2px solid #dedbdb;
     border-radius: 8px;
-    box-shadow: 1px 3px grey;    
+    box-shadow: 1px 3px grey;
+    align-items: center;
+    align-content: center;
     margin-bottom: 18px;
     padding-left: 16px;
     padding-right: 16px;
-    justify-content: space-between;
     cursor: pointer;
   }
 
@@ -51,7 +52,7 @@
     font-size: 24px;
     text-align: left;
     margin-left: 0px;
-    width:240px;
+    width:240px ;
     float:left;
   }
 
@@ -72,22 +73,30 @@
 
   }
  
-  .endbutton {
+  .runningbutton {
     background-color: green;
     color: white;
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
-    cursor: pointer;
     padding: 8px;
+    cursor: pointer;
     margin: auto;
     border:1px solid green
   }
-  .endbutton:hover {
-    background-color: white;
-    color: green;
-    border: 1px solid green;
+  
+  .endedbutton {
+    background-color: rgb(164, 171, 164);
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    cursor: pointer;
+    margin: auto;
+    border:1px solid rgb(164, 171, 164)
   }
+  
 
   .deleteimg {
     width: 30px;

@@ -1,5 +1,6 @@
 import React from "react";
 import axios from 'axios';
+import Dropdown from "./dropdown/dropdown";
 
 
 const LocationSearchBar=({setPosition,position})=>{
@@ -68,10 +69,10 @@ const LocationSearchBar=({setPosition,position})=>{
     return(
         <div>
             <div class="inputboxcontaier">
-            <div class="input"><input onChange={searchLocation} placeholder="From Station" id="location"/><img class="inputicon" src="./down_arrow.png"/></div>
+            <div class="input"><input onChange={searchLocation} placeholder="From Station" id="location"/><img class="inputicon" src="./down_arrow.png" onClick={Dropdown}/></div>
             </div>
             <div class="inputboxcontaier">
-            <div class="input"><input onChange={searchLocation} placeholder="To Station" id="location"/><img class="inputicon" src="./down_arrow.png"/></div>
+            <div class="input"><input onChange={searchLocation} placeholder="To Station" id="location"/><img class="inputicon" src="./down_arrow.png" onClick={Dropdown}/></div>
             </div>
             <div class="inputboxcontaier">
             <div class="input"><input onChange={searchLocation} placeholder="Data of Journey" id="location"/><img class="inputicon" src="./down_arrow.png"/></div>

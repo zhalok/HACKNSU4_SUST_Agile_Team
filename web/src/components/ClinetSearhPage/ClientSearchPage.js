@@ -6,6 +6,7 @@ import ServiceSearchBar from "../common/ServiceSearchBar";
 import Notification from "../common/Notification";
 import './style.css';
 import axios from "axios";
+import Dropdown from "../common/dropdown/dropdown";
 
 const ClinetSearhPage=()=>{
     const [position,setPosition]=useState(null);
@@ -28,7 +29,7 @@ const ClinetSearhPage=()=>{
             <Title_bar page="clientPage"/>
             <div id="searchdiv">
                 <div id="inputfields">
-                    <LocationSearchBar setPosition={setPosition} position={position}/>
+                    <LocationSearchBar setPosition={setPosition} position={position} onClick={Dropdown}/>
                     <ServiceSearchBar setService={setService} service={service}/>
                     <div id="searchbutton" onClick={Search}>Search Trains</div>
                 </div>
