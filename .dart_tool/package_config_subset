@@ -2,6 +2,10 @@ e_ticket
 2.17
 file:///E:/HackNSU/HACKNSU4_SUST_Agile_Team-1/
 file:///E:/HackNSU/HACKNSU4_SUST_Agile_Team-1/lib/
+animated_splash_screen
+2.12
+file:///F:/flutter_windows_3.0.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/animated_splash_screen-1.3.0/
+file:///F:/flutter_windows_3.0.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/animated_splash_screen-1.3.0/lib/
 async
 2.12
 file:///F:/flutter_windows_3.0.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.8.2/
@@ -54,6 +58,10 @@ meta
 2.12
 file:///F:/flutter_windows_3.0.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/
 file:///F:/flutter_windows_3.0.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.7.0/lib/
+page_transition
+2.12
+file:///F:/flutter_windows_3.0.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/page_transition-2.0.9/
+file:///F:/flutter_windows_3.0.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/page_transition-2.0.9/lib/
 path
 2.12
 file:///F:/flutter_windows_3.0.5-stable/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.1/
