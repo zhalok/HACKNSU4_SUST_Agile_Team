@@ -39,6 +39,8 @@ payment_controller.initalize_payment = (req, res, next) => {
   post_body["product_category"] = "train-ticket";
   post_body["product_profile"] = "general";
 
+  console.log(total_amount);
+
   sslcommerz
     .init_transaction(post_body)
     .then((response) => {
@@ -54,25 +56,25 @@ payment_controller.success = (req, res, next) => {
 payment_controller.failure = (req, res, next) => {};
 payment_controller.cancel = (req, res, next) => {};
 payment_controller.ipn = (req, res, next) => {
-  const { tran_id } = req.body;
+  const { tran_id, currency_ammount } = req.body;
   console.log(tran_id);
-  // mysqlClient.beginTransaction((err) => {
-  //   if (err) {
-  //     throw err;
-  //   }
-  //   mysqlClient.query(
-  //     "insert into ticket_transaction (ticket_id,user_id,issue_date,payment_trans_id,paid_amount) values (?)",
-  //     [[ticket_id, cus_id, "2022-08-19", tran_id, total_amount]],
-  //     (err1, rows) => {
-  //       if (err1) {
-  //         mysqlClient.rollback();
-  //       } else {
-  //         console.log("Transaction happened successfully");
-  //         res.end();
-  //       }
-  //     }
-  //   );
-  // });
+  mysqlClient.beginTransaction((err) => {
+    if (err) {
+      throw err;
+    }
+    mysqlClient.query(
+      "insert into ticket_transaction (ticket_id,user_id,issue_date,payment_trans_id,paid_amount) values (?)",
+      [[1, 1, "2022-08-19", tran_id, currency_ammount]],
+      (err1, rows) => {
+        if (err1) {
+          mysqlClient.rollback();
+        } else {
+          console.log("Transaction happened successfully");
+          res.end();
+        }
+      }
+    );
+  });
   res.end();
 };
 
