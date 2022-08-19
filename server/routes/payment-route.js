@@ -8,5 +8,6 @@ payment_router.post(
 payment_router.post("/success", payment_controller.success);
 payment_router.post("/failure", payment_controller.failure);
 payment_router.post("/cancel", payment_controller.cancel);
+payment_router.post("/ipn", payment_controller.ipn);
 
 module.exports = payment_router;

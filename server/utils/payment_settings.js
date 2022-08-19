@@ -8,5 +8,5 @@ let settings = {
 
 let sslcommerz = new SSLCommerz(settings);
 
-console.log(sslcommerz);
+// console.log(sslcommerz);
 module.exports = sslcommerz;

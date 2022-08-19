@@ -14,7 +14,7 @@ payment_controller.initalize_payment = (req, res, next) => {
     number_of_tickets,
     ticket_name,
   } = req.body;
-  console.log(req.body);
+  // console.log(req.body);
   let post_body = {};
   post_body["total_amount"] = total_amount;
   post_body["currency"] = "BDT";
@@ -50,5 +50,12 @@ payment_controller.success = (req, res, next) => {
 };
 payment_controller.failure = (req, res, next) => {};
 payment_controller.cancel = (req, res, next) => {};
+payment_controller.ipn = (req, res, next) => {
+  // res.json("Nice");
+  console.log(req.method);
+  console.log(req.body);
+
+  res.json("hello");
+};
 
 module.exports = payment_controller;
