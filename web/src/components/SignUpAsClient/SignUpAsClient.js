@@ -7,9 +7,12 @@ import "./style.css"
         <div id="container">
             <TitleBar page="signUp"/>
             <div id="signUp">
-                <div id="signuptxt">Sign Up as Client</div>
+                <div id="signuptxt">Sign Up</div>
                 <input type="name" class="signupinput" id="name" placeholder="Name"/>
                 <input class="signupinput" id="email" placeholder="Email"/>
+                <input class="signupinput" id="mobile" placeholder="Mobile Number"/>
+                <input class="signupinput" id="address" placeholder="Address"/>
+                <input class="signupinput" id="city" placeholder="City"/>
                 <input type="password" class="signupinput" id="password" placeholder="password"/>
                 <div id="signupbutton">Sign Up</div>
                 <div id="alreadyhaveaccount">Already have an account?<font id="logIn">Log In</font></div>

@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import './components/Landing_page/Landing_page'
+
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 
 //import LandingPage from './components/Landing_page/Landing_page';
 // import ClientSearchPage from  './components/ClinetSearhPage/ClientSearchPage'
 import Login from './components/Login/Login'
-import SignUp1 from './components/SignUp_1/SignUp_1';
-import SignUpAsWorker from './components/SignUpAsWorker/SignUpAsWorker';
+import SignUpAsClient from './components/SignUpAsClient/SignUpAsClient';
+
 // import UserProfile from './components/UserProfile/UserProfile'
 //import ViewSearchedUserProfile from './components/UserProfile/ViewSearchedUserProfile';
 /*import ViewProfile from './components/UserProfile/ViewProfile';
@@ -30,6 +30,7 @@ function App() {
           
         
         <Route path="/login" exact element={<Login/>}/>
+        <Route path="/signup" exact element={<SignUpAsClient/>}/>
           
         </Routes>
       </Router>
