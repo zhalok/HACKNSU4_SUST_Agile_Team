@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 
 
 
-class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+class SecondScreen extends StatefulWidget {
+  const SecondScreen({Key? key}) : super(key: key);
 
   @override
-  State<MyApp> createState() => _MyAppState();
+  State<SecondScreen> createState() => _SecondScreenState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _SecondScreenState extends State<SecondScreen> {
   String dropdownvalue = 'Dhaka';
  
 
