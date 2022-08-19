@@ -56,6 +56,7 @@ payment_controller.success = (req, res, next) => {
 payment_controller.failure = (req, res, next) => {};
 payment_controller.cancel = (req, res, next) => {};
 payment_controller.ipn = (req, res, next) => {
+  console.log(req.body);
   res.end();
 };
 
