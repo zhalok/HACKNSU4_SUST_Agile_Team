@@ -3,6 +3,6 @@ create table ticket_transaction(
     ticket_id int not null,
     user_id int not null,
     issue_date date not null,
-    payment_trans_id varchar(256) not null,
+    payment_trans_id varchar(1000) not null,
     paid_amount int not null
 )

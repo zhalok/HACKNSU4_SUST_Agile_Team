@@ -9,6 +9,7 @@ payment_controller.initalize_payment = (req, res, next) => {
     cus_name,
     cus_email,
     cus_phone,
+    cus_id,
     cus_add1,
     cus_city,
     multi_card_name,
@@ -54,22 +55,24 @@ payment_controller.failure = (req, res, next) => {};
 payment_controller.cancel = (req, res, next) => {};
 payment_controller.ipn = (req, res, next) => {
   const { tran_id } = req.body;
-  mysqlClient.beginTransaction((err) => {
-    if (err) {
-      throw err;
-    }
-    mysqlClient.query(
-      "insert into ticket_transaction (ticket_id,user_id,issue_date,payment_trans_id,paid_amount) values (?)",
-      [[ticket_id, cus_email, "2022-08-19", tran_id, total_amount]],
-      (err1, rows) => {
-        if (err1) {
-          mysqlClient.rollback();
-        } else {
-          console.log("Transaction happened successfully");
-        }
-      }
-    );
-  });
+  console.log(tran_id);
+  // mysqlClient.beginTransaction((err) => {
+  //   if (err) {
+  //     throw err;
+  //   }
+  //   mysqlClient.query(
+  //     "insert into ticket_transaction (ticket_id,user_id,issue_date,payment_trans_id,paid_amount) values (?)",
+  //     [[ticket_id, cus_id, "2022-08-19", tran_id, total_amount]],
+  //     (err1, rows) => {
+  //       if (err1) {
+  //         mysqlClient.rollback();
+  //       } else {
+  //         console.log("Transaction happened successfully");
+  //         res.end();
+  //       }
+  //     }
+  //   );
+  // });
   res.end();
 };
 
