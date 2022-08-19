@@ -1,0 +1,2 @@
+payment: https://f9a1-37-111-214-100.in.ngrok.io/payment/initialize-payment
+ticket_request: https://f9a1-37-111-214-100.in.ngrok.io/tickets/request
