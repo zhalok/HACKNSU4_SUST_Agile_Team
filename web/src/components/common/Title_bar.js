@@ -49,11 +49,11 @@ const TitleBar=({page,style,up})=>{
             
            { page==="clientPage"?(<div id="titlebarclientcontainer">
             <div id="clienttabs" class="tabcontainer">
-                <Link to="/profile" class="tab">profile</Link>
-                <Link to="/search" class="tab">find workers</Link>
-                <Link to="/hires" class="tab">my hires</Link>
+                <Link to="/search" class="tab">Home</Link>
+                <Link to="/login" class="tab">Login</Link>
+                <Link to="/signup" class="tab">SignUp</Link>
             </div>
-            <img src={up?up:localStorage.getItem("profile_pic")} id="titlebarimg" onClick={titleImgClick}/>
+            
             </div>):null}
             { page==="workerPage"?(<div id="titlebarclientcontainer">
             <div id="clienttabs" class="tabcontainer">

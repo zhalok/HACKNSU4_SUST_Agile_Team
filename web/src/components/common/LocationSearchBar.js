@@ -68,7 +68,13 @@ const LocationSearchBar=({setPosition,position})=>{
     return(
         <div>
             <div class="inputboxcontaier">
-            <div class="input"><input onChange={searchLocation} placeholder="Set Location" id="location"/><img class="inputicon" src="./pics_icons//location.png"/></div>
+            <div class="input"><input onChange={searchLocation} placeholder="From Station" id="location"/><img class="inputicon" src="./down_arrow.png"/></div>
+            </div>
+            <div class="inputboxcontaier">
+            <div class="input"><input onChange={searchLocation} placeholder="To Station" id="location"/><img class="inputicon" src="./down_arrow.png"/></div>
+            </div>
+            <div class="inputboxcontaier">
+            <div class="input"><input onChange={searchLocation} placeholder="Data of Journey" id="location"/><img class="inputicon" src="./down_arrow.png"/></div>
             </div>
             <div class="resultwrapper" id="locationresult"></div>
         </div>
