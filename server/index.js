@@ -4,6 +4,7 @@ const cors = require("cors");
 dotenv.config();
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
@@ -13,11 +14,13 @@ app.use((req, res, next) => {
 });
 
 const payment_route = require("./routes/payment-route");
+const user_route = require("./routes/user-route");
 
 app.get("/", (req, res, next) => {
   res.json("Hello server");
 });
 app.use("/payment", payment_route);
+app.use("/user", user_route);
 
 app.use((error, req, res, next) => {
   if (res.headerSent) {
