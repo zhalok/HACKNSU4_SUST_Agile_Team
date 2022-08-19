@@ -3,6 +3,7 @@ hr {
 }
 .inputicon {
   width: 44px;
+  cursor: pointer;
 }
 .input {
   width: 100%;
