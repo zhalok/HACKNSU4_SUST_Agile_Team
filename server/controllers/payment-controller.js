@@ -56,8 +56,22 @@ payment_controller.success = (req, res, next) => {
 payment_controller.failure = (req, res, next) => {};
 payment_controller.cancel = (req, res, next) => {};
 payment_controller.ipn = (req, res, next) => {
-  console.log(req.body);
-  res.end();
+  if (req.body.val_id) {
+    // fetch(
+    //   "https://sandbox.sslcommerz.com/validator/api/validationserverAPI.php",
+    //   {
+    //     headers: "content-type:x-www-form-urlencoded",
+    //     body: new URLSearchParams({
+    //       val_id: req.body.val_id,
+    //       store_id: process.env.STORE_ID,
+    //       store_passwd: process.env.STORE_PASSWORD,
+    //       format: "json",
+    //     }),
+    //   }
+    // )
+    //   .then((res) => console.log(res))
+    //   .catch((e) => console.log(e));
+  }
 };
 
 module.exports = payment_controller;
