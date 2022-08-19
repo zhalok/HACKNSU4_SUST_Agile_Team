@@ -1,4 +1,5 @@
 // ignore_for_file: prefer_const_constructors
+import 'package:e_ticket/screens/payment.dart';
 import 'package:flutter/material.dart';
 
 
@@ -89,10 +90,11 @@ class _SecondScreenState extends State<SecondScreen> {
               SizedBox(
                 height: 50,
               ),
-              // ElevatedButton(
-              //   style: ,
-              //   onPressed: onPressed,
-              //  child: child)
+               ElevatedButton(
+            onPressed: () => Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) =>  MakePayment())),
+            child: const Text('Buy Ticket'),
+            )
             ],
           ),
         ),
