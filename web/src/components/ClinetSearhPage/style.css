@@ -17,6 +17,12 @@ input {
   margin-right: 18px;
   outline: none;
 }
+#searchtxt {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 32px;
+  padding: 8px;
+}
 #searchdiv {
   height: 74vh;
   display: flex;

@@ -3,12 +3,13 @@ import Footer from "../../common/footer/Footer";
 import TitleBar from "../../common/Title_bar";
 import "./style.css"
 
+
  const WorkerRequestPage=()=>{
     
     const [clients, setClients]=useState([
         {name:"Parabat Express", service:"Class: S_chair", service_status:"Running"},
         {name:"Jayantika Express", service:"Class: S_chair", service_status:"Waiting", profile_pic:"./pics_icons/profilepic.jpg", email:"tithi@gmailcom"},
-        {name:"Sundarban Express", service:"S_chair", service_status:"Cancelled", profile_pic:"./pics_icons/profilepic.jpg", email:"tithi@gmailcom"}
+        {name:"Upoban Express", service:"Class: S_chair", service_status:"Cancelled", profile_pic:"./pics_icons/profilepic.jpg", email:"tithi@gmailcom"}
         ]);
 
 

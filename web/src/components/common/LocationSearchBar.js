@@ -75,7 +75,7 @@ const LocationSearchBar=({setPosition,position})=>{
             <div class="input"><input onChange={searchLocation} placeholder="To Station" id="location"/><img class="inputicon" src="./down_arrow.png" onClick={Dropdown}/></div>
             </div>
             <div class="inputboxcontaier">
-            <div class="input"><input onChange={searchLocation} placeholder="Data of Journey" id="location"/><img class="inputicon" src="./down_arrow.png"/></div>
+            <div class="input"><input  placeholder="Date of Journey" id="location"/><img class="inputicon" src="./down_arrow.png" onClick={Dropdown}/></div>
             </div>
             <div class="resultwrapper" id="locationresult"></div>
         </div>

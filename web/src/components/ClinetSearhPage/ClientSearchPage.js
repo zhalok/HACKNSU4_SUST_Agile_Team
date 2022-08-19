@@ -7,6 +7,7 @@ import Notification from "../common/Notification";
 import './style.css';
 import axios from "axios";
 import Dropdown from "../common/dropdown/dropdown";
+import { Link } from "react-router-dom";
 
 const ClinetSearhPage=()=>{
     const [position,setPosition]=useState(null);
@@ -29,12 +30,17 @@ const ClinetSearhPage=()=>{
             <Title_bar page="clientPage"/>
             <div id="searchdiv">
                 <div id="inputfields">
+                
+                <div id="searchtxt">Search for Trains</div>
                     <LocationSearchBar setPosition={setPosition} position={position} onClick={Dropdown}/>
                     <ServiceSearchBar setService={setService} service={service}/>
-                    <div id="searchbutton" onClick={Search}>Search Trains</div>
+                    <div id="searchbutton" onClick={Search}>
+                    <Link to="/ticket" class="tab">Search Trains</Link></div>
+                    <br/>
+                    
                 </div>
             </div>
-            <Footer/>
+            
             <Notification text={text} setText={setText}/>
         </div>
     )

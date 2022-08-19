@@ -53,9 +53,12 @@ const ServiceSearchBar=({setService,service})=>{
 
     return(
         <div>
+           
             <div class="inputboxcontaier">
+    
             <div class="input"><input id="service" onChange={ontype} placeholder="Choose a Class"/><img class="inputicon" src="./down_arrow.png"/></div>
             </div>
+            
             <div class="resultwrapper" id="serviceresult"></div>
         </div>
 
