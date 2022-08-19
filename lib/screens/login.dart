@@ -1,4 +1,4 @@
-import 'package:e_ticket/main.dart';
+import 'package:e_ticket/screens/destination.dart';
 import 'package:flutter/material.dart';
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -13,6 +13,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: Column(
         children: <Widget>[
+          const Padding(padding: EdgeInsets.all(80)),
           TextFormField(
             decoration: const InputDecoration(
               border: OutlineInputBorder(),
@@ -29,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           ElevatedButton(
             onPressed: () => Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) =>  MyApp())),
+            .push(MaterialPageRoute(builder: (context) =>  SecondScreen())),
             child: const Text('Submit'),
             )
         ],
