@@ -2,14 +2,14 @@ const mysqlClient = require("../utils/database_config");
 
 const user_route_controller = {};
 user_route_controller.add_user = (req, res, next) => {
-  const { name, pass, email, address, phone, city, password } = req.body;
+  const { name, password, email, address, phone, city } = req.body;
   const queryString =
-    "insert into user (name,pass,email,address,phone,city) values (?)";
+    "insert into user (name,pass,email,adrr,phone,city) values (?)";
   // console.log(name);
   // res.json("Hello");
   mysqlClient.query(
     queryString,
-    [[name, pass, email, address, phone, city, password]],
+    [[name, password, email, address, phone, city]],
     (err, rows) => {
       if (err) {
         next(err);
