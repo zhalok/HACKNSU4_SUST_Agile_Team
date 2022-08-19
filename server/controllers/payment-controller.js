@@ -19,13 +19,10 @@ payment_controller.initalize_payment = (req, res, next) => {
   post_body["total_amount"] = total_amount;
   post_body["currency"] = "BDT";
   post_body["tran_id"] = uuidv4();
-  post_body["success_url"] =
-    "https://9ef4-37-111-214-100.in.ngrok.io/payment/success";
-  post_body["fail_url"] =
-    "https://9ef4-37-111-214-100.in.ngrok.io/payment/failure";
-  post_body["cancel_url"] =
-    "https://9ef4-37-111-214-100.in.ngrok.io/payment/cancel";
-  post_body["ipn_url"] = "https://9ef4-37-111-214-100.in.ngrok.io/payment/ipn";
+  post_body["success_url"] = `${process.env.BASE}/payment/success`;
+  post_body["fail_url"] = `${process.env.BASE}/payment/failure`;
+  post_body["cancel_url"] = `${process.env.BASE}/payment/cancel`;
+  post_body["ipn_url"] = `${process.env.BASE}/payment/ipn`;
   post_body["emi_option"] = 0;
   post_body["cus_name"] = cus_name;
   post_body["cus_email"] = cus_email;
@@ -43,8 +40,7 @@ payment_controller.initalize_payment = (req, res, next) => {
   sslcommerz
     .init_transaction(post_body)
     .then((response) => {
-      if (response && response.redirectGatewayURL)
-        res.status(200).json(response);
+      res.json(response);
     })
     .catch((error) => {
       next(error);
