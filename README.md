@@ -1,6 +1,10 @@
 # e_ticket
 
-A new Flutter project.
+An advanced e-ticketing system developed for
+reissuing railway tickets.
+
+####Description
+
 
 ## Getting Started
 
