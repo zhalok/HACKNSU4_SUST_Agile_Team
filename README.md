@@ -3,18 +3,28 @@
 An advanced e-ticketing system developed for
 reissuing railway tickets.
 
-####Description
+#### THE PROBLEM
+If someone purchases a train ticket and for some reason is unable to make the journey just before he departure, the seat remains officially empty for the rest of the whole journey. It causes a lot of people to suffer and wastage of resource, although they could have travelled in that seat from any of the next stations. 
+#### OUR IDEA
+Online e-Ticket Service
+<br>
+Transactions between :
+- Server and user 
+- User and user
+<br>
+If someone cancels a ticket, this will be informed to the first user of the queue who requested for a ticket. <br>
+Transaction between the two users and the user can also travel with the ticket from his station.
 
+#### FEATURES
+- Purchasing e-Tickets.
+- Directly Selling e-Tickets to another end user if someone is unable to travel with a ticket.
+- If someone is unable to make the journey at the same time of the train departure then, he can cancel the ticket and this will be informed through email or SMS to all the users who had requested for the ticket.
+- If any user buy the ticket, there will be a transaction between these two users. Thus, the user who could not travel will also get a refund. Along with that, user also gets a seat.
 
-## Getting Started
+#### TECHNOLOGIES
+- React
+- Node
+- Flutter
+- MySQL
+- Payment Gateway: SSLCOMMERZ
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
